@@ -1,0 +1,1000 @@
+/* Start of CMSMS style sheet 'Layout: Top menu + 2 columns' */
+/* browsers interpret margin and padding a little differently, we'll remove all default padding and margins 
+
+and set them later on */
+* {
+	margin: 0;
+	padding: 0;
+}
+/*Set initial font styles*/
+body {
+	text-align: left;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 70.01%;
+	line-height: 1em;
+}
+/*set font size for all divs, this overrides some body rules*/
+div {
+	font-size: 1em;
+      
+      }
+/*if img is inside "a" it would have borders, we don't want that*/
+img {
+	border: 0;
+}
+/*default link styles*/
+/* set all links to have underline and bluish color */
+a, a:link a:active {
+	text-decoration: none;
+/* css validation will give a warning if color is set without background color. this will explicitly tell this 
+
+element to inherit bg colour from parent element */
+	background-color: inherit;
+	color: #18507C;
+}
+a:visited {
+	text-decoration: none;
+	background-color: inherit;
+	color: #18507C;
+/* a different color can be used for visited links */
+}
+/* remove underline on hover and change color */
+a:hover {
+	text-decoration: underline;
+	background-color: inherit;
+	color: #385C72;
+}
+/*****************basic layout *****************/
+body {
+	margin: 0;
+	padding: 0;
+/* default text color for entire site*/
+	color: #666666;
+/* you can set your own image and background color here */
+       background-color: #FFFFFF;
+	/*background: #2e71b8 url(uploads/ngrey/bg-new3.jpg) repeat-x left top;*/
+}
+div#pagewrapper {
+/* min max width, IE wont understand these, so we will use java script magic in the <head> */
+	/*max-width: 85em;*/
+	/*min-width: 85em;*/
+                max-width:960px;
+	min-width: 960px;
+               /* now that width is set this centers wrapper */
+	margin: 0 auto;
+	background-color: #ffffff;
+	color: black;
+}
+/* header, we will hide h1 a text and replace it with an image, we assign a height for it so the image wont 
+
+cut off */
+
+#Header {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: 
+
+960px; PADDING-TOP: 0px; POSITION: relative; HEIGHT: 80px;BACKGROUND-COLOR: #FFFFFF;
+}
+
+#Header .Hleft {
+	FONT-SIZE: 10px;BACKGROUND: url(uploads/ngrey/left-logo-desco.png) no-repeat left top; FLOAT: left; 
+
+WIDTH: 229px;HEIGHT: 80px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif;BACKGROUND-COLOR: 
+
+#FFFFFF;
+}
+
+
+#Header .Hright {
+	FLOAT: right;WIDTH: 731px;COLOR: #000000;HEIGHT: 80px;BACKGROUND-COLOR: #FFFFFF;BACKGROUND: url
+
+(uploads/images/header321.png) no-repeat left top;
+}
+
+sitename {
+/* this is where the site name is */
+	float: left;
+	line-height: 1.2em;
+/* this keeps IE6 from not showing the whole text */
+	font-size: 1.5em;
+/* keeps the size uniform */
+	margin: 35px 65px 0px 0px;
+/* adjust according your text size */
+	color: #f4f4f4;
+}
+
+div.crbk {
+/* sets all to 0 */
+	margin: 0;
+	padding: 0;
+/* you can set your own image here */
+	background-color:#FFFFFF;
+}
+div.breadcrumbs {
+/* CSS short hand rule first value is top then right, bottom and left */
+	padding: 1em 0em 0em 1em;
+/* its good to set font sizes to be relative, this way viewer can change his/her font size */
+	font-size: 90%;
+/* css shorthand rule will be opened to be "0px 0px 0px 0px" */
+	margin: 0px;
+/* you can set your own image here */
+	background-color:#FFFFFF;
+}
+div.breadcrumbs span.lastitem {
+	font-weight: bold;
+}
+div#search {
+/* position for the search box */
+	float: right;
+/* enough width for the search input box */
+	width: 27em;
+	text-align: right;
+	padding: 0.2em 0 0.2em 0;
+	margin: 0 1em;
+             }
+/* a class for Submit button for the search input box */
+input.search-button {
+	border: none;
+                color:#FFFFFF;
+                font-weight: none;
+	height: 22px;
+	width: 23px;
+	margin-left: 2px;
+	padding: 0px 2px 2px 0px;
+/* makes the hover cursor show, you can set your own cursor here */
+	cursor: pointer;
+/* you can set your own image here */
+	background: url(uploads/images/searchbttn.gif ) no-repeat center center;
+}
+div#content {
+/* some air above and under menu and content */
+	margin: 1em auto 1em 0;
+	padding: 0px;
+}
+/* this gets all the outside calls that were used on the div#main before  */
+div.back1 {
+/* this will give room for sidebar to be on the left side, make sure this number is bigger than sidebar width 
+
+*/
+	margin-left: 29%;
+/* and some air on the right */
+	margin-right: 2%;
+/* you can set your own image here */
+	background: url(uploads/ngrey/mainrighttop.png) no-repeat right top;
+       border-left:0px solid #7db2fa;
+}
+/* this is an IE6 hack, you may see these through out the CSS */
+* html div.back1 {
+/* unlike other browser IE6 needs float:right and a width */
+	float: right;
+	width: 69%;
+/* and we take this out or it will stop at the bottom  */
+	margin-left: 0%;
+/* and some air on the right */
+	margin-right: 10px;
+/* you can set your own image here */
+	background: url(uploads/ngrey/mainrighttop.png) no-repeat right top;
+}
+div.back2 {
+/* you can set your own image here */
+	background: url(uploads/ngrey/mainlefttop.png) no-repeat left top;
+
+}
+div.back3 {
+/* you can set your own image here */
+	background: url(uploads/ngrey/mainbtmleft1.png) no-repeat left bottom;
+}
+
+
+div#main {
+/* this is the last inside div so we set the space inside it to keep all content away from the edges of 
+
+images/box */
+	padding: 10px 15px;
+/* you can set your own image here */
+	background: url(uploads/ngrey/content-br.png) no-repeat right bottom;
+
+}
+div#sidebar {
+/* set sidebar left. Change to right, float: right; instead, but you will need to change the margins. */
+	float: left;
+/* sidebar width, if you change this change div.back and/or div.back1 margins */
+	width: 26%;
+/* FIX IE double margin bug */
+	/*display: inline;*/
+         border:#cacaca 0px solid;
+/* the 20px is on the bottom, insures space above footer if longer than content */
+	margin: 0px 0px 20px;
+	/* you can set your own image here */
+      
+	background:#FFFFFF url(uploads/ngrey/sidebartop92.png ) no-repeat right top;
+}
+
+div#sidebarinner{
+background:#FFFFFF url(uploads/ngrey/sidebarinner.png) repeat-y;
+
+}
+
+div#sidebartop{
+background:url(uploads/ngrey/left-side-topnew.png) no-repeat right top;
+padding-top: 0px;
+width: 26%;
+}
+
+div#sidebarb {
+	padding: 100px 15px 10px 20px;
+/* this one is for sidebar with content and no menu */
+	background:# url(uploads/ngrey/left-side-bottomnew1.png) no-repeat right bottom; 
+}
+div#sidebarb div#news {
+/* less margin surrounding the news, sidebarb has enough */
+	margin: 2em 0 1em 0em;
+}
+div#sidebara {
+	padding: 5px 15px 20px 0px;
+/* this one is for sidebar with menu and no content */
+	background:#FFFFFF url(uploads/ngrey/left-side-bottomnew1.png) no-repeat right bottom;
+}
+div.footback {
+/* keep footer below content and menu */
+	clear: both;
+/* this sets 10px on right to let the right image show, the balance 10px left on next div */
+	padding: 0px 10px 0px 0px;
+/* you can set your own image here */
+	background:#2e71b8 url(uploads/ngrey/footer-bg-new.png) left bottom repeat-x;
+        height:25px;
+}
+div#footer {
+/* this sets 10px on left to balance 10px right on last div */
+	padding: 0px 0px 0px 0px;
+/* color of text, the link color is set below */
+	color: #FFFFFF;
+/* you can set your own image here */
+	background: url(uploads/ngrey/footer-bg-new.png) no-repeat;
+                width:auto;
+              height:34px;
+               }
+
+div.leftfoot {
+	float: left;
+        padding-left: 10px;
+	width: 50%;
+	margin-left: 20px
+}
+div#footer p {
+/* sets different font size from default */
+	font-size: 0.8em;
+/* some air for footer */
+	padding: 0.5em;
+/* centered text */
+	text-align: center;
+	margin: 0;
+}
+div#footer p a {
+/* footer link would be same color as default we want it same as footer text */
+	color: #FFFF00;
+}
+/* as we hid all hr for accessibility we create new hr with div class="hr" element */
+div.hr {
+	height: 1px;
+	padding: 1em;
+	border-bottom: 1px dotted black;
+	margin: 1em;
+}
+/* relational links under content */
+div.left49 {
+/* combined percentages of left+right equaling 100%  might lead to rounding error on some browser */
+	width: 70%;
+}
+div.right49 {
+	float: right;
+	width: 29%;
+/* set right to keep text on right */
+	text-align: right;
+       color: #FF0000;
+	font-size: 1.2em;
+        font-weight: bold;
+}
+/********************CONTENT STYLING*********************/
+/* HEADINGS */
+div#content h1 {
+/* font size for h1 */
+	font-size: 2em;
+	line-height: 1em;
+	margin: 0;
+}
+div#content h2 {
+	color: #2e71b8;
+/* font size for h2 the higher the h number the smaller the font size, most times */
+	font-size: 1.5em;
+        font-weight:normal;
+	text-align: left;
+/* some air around the text */
+	padding-left: 0.5em;
+	padding-bottom: 0px;
+/* set borders around header */
+	border-bottom: 1px solid #cacaca;
+	border-left: 1px solid #cacaca;
+/* a larder than h1 line height */
+	line-height: 1.5em;
+/* and some air under the border */
+	margin: 0 0 0.5em 0;
+}
+div#content h3 {
+	color: #2e71b8;
+	font-size: 1.0em;
+	line-height: 1.3em;
+	margin: 0 0 0.1em 0;
+}
+div#content h4 {
+	color: #2e71b8;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin: 0 0 0.25em 0;
+}
+div#content h5 {
+	color: #294B5F;
+	font-size: 1.1em;
+	line-height: 1.3em;
+	margin: 0 0 0.25em 0;
+}
+h6 {
+	color: #294B5F;
+	font-size: 1em;
+	line-height: 1.3em;
+	margin: 0 0 0.25em 0;
+}
+/* END HEADINGS */
+/* TEXT */
+p {
+/* default p font size, this is set different in some other divs */
+	font-size: 1em;
+/* some air around p elements */
+	margin: 0 0 1.5em 0;
+	line-height: 1.4em;
+	padding: 0;
+}
+blockquote {
+	border-left: 10px solid #ddd;
+	margin-left: 10px;
+}
+strong, b {
+/* explicit setting for these */
+	font-weight: bold;
+}
+em, i {
+/* explicit setting for these */
+	font-style: italic;
+}
+/* Wrapping text in <code> tags. Makes CSS not validate */
+code, pre {
+/* css-3 */
+	white-space: pre-wrap;
+/* Mozilla, since 1999 */
+	white-space: -moz-pre-wrap;
+/* Opera 4-6 */
+	white-space: -pre-wrap;
+/* Opera 7 */
+	white-space: -o-pre-wrap;
+/* Internet Explorer 5.5+ */
+	word-wrap: break-word;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+}
+pre {
+/* black border for pre blocks */
+	border: 1px solid #000;
+/* set different from surroundings to stand out */
+	background-color: #ddd;
+	margin: 0 1em 1em 1em;
+	padding: 0.5em;
+	line-height: 1.5em;
+	font-size: 90%;
+}
+/* Separating the divs on the template explanation page */
+div.templatecode {
+	margin: 0 0 2.5em;
+}
+/* END TEXT */
+/* LISTS */
+/* lists in content need some margins to look nice */
+div#main ul,
+div#main ol,
+div#main dl {
+	font-size: 1.0em;
+	line-height: 1.4em;
+	margin: 0 0 2.5em 0;
+                color:#000000;
+        list-style-type: square;
+}
+
+div#main ul li,
+div#main ol li {
+	margin: 0 0 0.25em 3em;
+                color:#666666;
+              list-style-type: none;
+}
+/* definition lists topics on bold */
+div#main dl {
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #c0c0c0;
+        
+}
+div#main dl dt {
+	font-weight: bold;
+	margin: 0 0 0 1em;
+            
+}
+div#main dl dd {
+	margin: 0 0 1em 1em;
+}
+/* END LISTS */
+
+table.mytable {
+background-color: #cacaca;
+ width: 620px;
+  border: 0px solid black;
+  border-spacing: 0px;
+}
+
+table.mytable  thead tr{
+  font-family: Arial, monospace;
+  font-size: 14px;
+}
+
+table.mytable  thead tr th{
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  margin: 0px;
+  padding: 2px;
+  background-color: #cccccc;
+}
+
+table.mytable  tr {
+  font-family: arial, monospace;
+  color: black;
+  font-size:12px;
+  background-color: white;
+}
+
+table.mytable {
+  background-color: #d0dafd;
+}
+
+table.mytable  tr td, th{
+  border-bottom: 1px solid black;
+  padding: 2px;
+  text-align:center;
+}
+
+
+table.mytable1 {
+ width: 620px;
+  border: 0px solid black;
+  border-spacing: 0px;
+}
+
+table.mytable1  thead tr{
+  font-family: Arial, monospace;
+  font-size: 14px;
+}
+
+table.mytable1 thead tr th{
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  margin: 0px;
+  padding: 2px;
+  background-color: #cacaca;
+}
+
+table.mytable1  tr {
+  font-family: arial, monospace;
+  color: black;
+  font-size:12px;
+  background-color: white;
+}
+
+table.mytable1 {
+  background-color: #d0dafd;
+}
+
+table.mytable1  tr td, th{
+  border-bottom: 1px solid black;
+  padding: 2px;
+  text-align:center;
+}
+
+
+#webmail IMG {
+	opacity:1; filter:alpha(opacity=100);
+                padding-bottom:4px;
+}
+
+.roundt {
+background: url(uploads/ngrey/content-dot1.png) 0 0 repeat-x; 
+width: 680px;
+
+}
+.roundb {background: url(uploads/ngrey/content-dot1.png) 0 100% repeat-x;}
+.roundl {background: url(uploads/ngrey/content-dot1.png) 0 0 repeat-y;}
+.roundr {background: url(uploads/ngrey/content-dot1.png) 100% 0 repeat-y;}
+.roundbl {background: url(uploads/ngrey/content-bl8.png) 0 100% no-repeat;}
+.roundbr {background: url(uploads/ngrey/content-bright.png) 100% 100% no-repeat;}
+.roundtl {background: url(uploads/ngrey/content-tl6.png) 0 0 no-repeat;}
+.roundtr {background: url(uploads/ngrey/content-tr3.png) 100% 0 no-repeat; padding:0px;}
+
+div.backmain {
+margin-left: 28%;
+margin-right: 0%;
+}
+
+* html div.backmain {
+float: right;
+width: 672px;
+margin-left: 0%;
+margin-right: 4px;
+	
+}
+
+
+
+
+.module_small_holder {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px 0px 0px; PADDING-TOP: 
+
+5px;COLOR: #4d4d4d;
+}
+.module_smallbody_heading {
+	PADDING-LEFT: 15px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #4d4d4d; TEXT-ALIGN: left; TEXT-
+
+DECORATION: none;
+}
+.module_smallshadow_top {
+	BACKGROUND-POSITION: center bottom; BACKGROUND-IMAGE: url
+
+(uploads/images/sidebox/small_modulebox_top.png); BACKGROUND-REPEAT: no-repeat; HEIGHT: 14px;
+}
+.module_smallshadow_bottom {
+	BACKGROUND-POSITION: center bottom; BACKGROUND-IMAGE: url
+
+(uploads/images/sidebox/small_modulebox_bottom.png); BACKGROUND-REPEAT: no-repeat; HEIGHT: 22px;
+}
+.module_smallshadow_bodybg {
+	BACKGROUND-POSITION: center bottom; BACKGROUND-IMAGE: url
+
+(uploads/images/sidebox/small_modulebox_body.png); MARGIN-LEFT: 10px; WIDTH: 257px; BACKGROUND-REPEAT: 
+
+repeat-y;
+}
+.btncolor { background-color: #84C1DF; border: 1px #000000 solid;} 
+
+
+.arrowgreen{
+	width: 212px; /*width of menu*/
+	border-style: solid solid solid solid;
+	border-color: #2e71b8;
+	border-size: 1px;
+	border-width: 1px;
+}
+
+.arrowgreen ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+       
+}
+	
+.arrowgreen li a{
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	background: transparent url(uploads/ngrey/arrowblue1.gif) 100% 0;
+  height: 24px; /*Set to height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	padding: 4px 0 4px 40px;
+	line-height: 24px; /*Set line-height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	text-decoration: none;
+      
+}	
+	
+.arrowgreen li a:link, .arrowgreen li a:visited {
+	color: #26370A;
+}
+
+.arrowgreen li a:hover{
+	color: #108df7;
+	background-position: 100% -32px;
+}
+
+	
+.arrowgreen li a.selected{
+	color: #26370A;
+	background-position: 100% -32px;
+}
+
+
+table.abc { width: 630px; padding: 0px; border: 0px solid #42afdc; background-color:#F5f5f5;font-family: 
+
+Verdana, Arial, Helvetica, sans-serif}
+table.abc th { font-size: 11px; border: 0px solid #42afdc; background-color: #F5f5f5;font-weight: bold; 
+
+color:#000000}
+table.abc td { font-size: 10px; border: 0px solid #42afdc; background-color: #ffffff; 
+vertical-align: middle; padding: 2px; font-weight: normal; }
+table.abc tr.special td { border-bottom: 1px solid #ff0000;  }
+
+A.footb:hover {
+	FONT-SIZE: 11px; COLOR: #ff0000; FONT-FAMILY: tahoma; TEXT-DECORATION: underline;
+}
+A.footb {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: tahoma; TEXT-DECORATION: none;
+}
+
+A.text3:hover {
+	FONT-SIZE: 8pt; COLOR: #5d7fed; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+A.text3 {
+	FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+
+table.abc2 { width: 633px; padding: 0px; border: 0px solid #42afdc; background-color:#d6e3f6;font-family: 
+
+Verdana, Arial, Helvetica, sans-serif}
+table.abc2 th { font-size: 11px; border: 0px solid #42afdc; background-color: #d6e3f6;font-weight: bold; 
+
+color:#333333}
+table.abc2 td { font-size: 10px; border: 0px solid #42afdc; background-color: #ffffff; 
+vertical-align: middle; padding: 2px; font-weight: normal; }
+table.abc2 tr.special td { border-bottom: 1px solid #ff0000;  }
+
+
+ul.myul
+{
+list-style: square url("uploads/ngrey/sqorange.gif");
+padding: 0px;
+margin: 0px;
+}
+
+li.myli
+{
+background-image: url(uploads/ngrey/sqorange.gif);
+background-repeat: no-repeat;
+background-position: 0px 5px;
+padding-left: 14px;
+}
+
+#side_bar1{
+
+	float:left;
+        padding:13px 10px 5px 0px;
+        background-color:#FFFFFF;
+
+	margin-left:10px;
+
+}
+#navigation1{
+
+	height:auto;
+
+	margin-left:20px;
+
+	width:auto;
+        font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+
+	}
+
+
+
+#navigation1 ul{
+
+	float:left;
+
+	list-style:none;
+
+	list-style-type:none;
+
+	background:url(images/nav_bg.gif) repeat-y;
+
+	}
+
+
+
+#navigation1 li a{
+
+	text-decoration:none;
+
+	color:#666666;	
+
+	padding:0 0 0 13px;
+
+	border-bottom:2px solid #dddddd;
+        line-height:18px;
+        
+
+	}
+
+
+
+#navigation1 li a:hover{
+
+	text-decoration:none;
+
+	color:#000;
+
+	background:url(images/hover_img.gif) no-repeat left;
+
+	border-bottom:1px solid #999999;
+
+	}
+
+
+
+#navigation1 li #current{
+
+	text-decoration:none;
+
+	color:#000;
+
+	background:url(images/hover_img.gif) no-repeat left;
+
+	}
+
+
+
+#left_items1{
+
+	padding:1px 1px 5px 0;
+
+	}
+
+
+
+#right_items1{
+
+	padding:50px 0 1px 0px;
+
+	}
+
+A.more {
+	BACKGROUND-IMAGE: url(images/org-arrow.gif); TEXT-ALIGN: left; WIDTH: 45px; DISPLAY: inline-block; 
+
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right 50%; COLOR: #e76308; FONT-SIZE: 11px; FONT-WEIGHT: 
+
+bold; TEXT-DECORATION: none
+}
+A.more:hover {
+	BACKGROUND-IMAGE: url(images/blue-arrow-03.gif); TEXT-ALIGN: left; WIDTH: 45px; DISPLAY: inline-block; 
+
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right 50%; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: 
+
+bold; TEXT-DECORATION: none
+}
+
+li.myli1
+{
+background-image: url(images/blue-arrow-03.gif);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+padding-left: 30px;
+}
+
+A.special {
+	BACKGROUND-IMAGE: url(images/blue-arrow-02.gif); BORDER-BOTTOM: #c5c2c9 1px dashed; PADDING-BOTTOM: 
+
+2px; PADDING-LEFT: 25px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left center; 
+
+COLOR: #6f6e6e; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+A.special:hover {
+	BACKGROUND-IMAGE: url(images/black-arrow.gif); BORDER-BOTTOM: #ecebed 1px dashed; PADDING-BOTTOM: 2px; 
+
+BACKGROUND-COLOR: #f5f5f5; PADDING-LEFT: 25px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; BACKGROUND-
+
+POSITION: left center; COLOR: #003366; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+
+.text10{
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #1362b3; FONT-SIZE: 
+
+11px; FONT-WEIGHT: bold; PADDING-TOP: 0px;FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.text {
+	BORDER-BOTTOM: #666666 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #666666 1px solid; PADDING-BOTTOM: 
+
+6px; LINE-HEIGHT: 10px; BACKGROUND-COLOR: #FFFFFF; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; FONT-FAMILY: Arial, 
+
+Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 11px; BORDER-TOP: #666666 1px solid; FONT-WEIGHT: bold; 
+
+BORDER-RIGHT: #666666 1px solid; PADDING-TOP: 6px
+}
+.textfield {
+	BORDER-BOTTOM: #666666 1px solid; TEXT-ALIGN: justify; BORDER-LEFT: #666666 1px solid; PADDING-BOTTOM: 
+
+6px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #FFFFFF; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; FONT-FAMILY: Arial, 
+
+Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 11px; BORDER-TOP: #666666 1px solid; FONT-WEIGHT: normal; 
+
+BORDER-RIGHT: #666666 1px solid; PADDING-TOP: 6px
+}
+.tableheader {
+	BORDER-BOTTOM: #666666 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #666666 1px solid; PADDING-BOTTOM: 
+
+3px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #FF0000; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Arial, 
+
+Helvetica, sans-serif; COLOR: #ffffff; FONT-SIZE: 11px; BORDER-TOP: #666666 1px solid; FONT-WEIGHT: bold; 
+
+BORDER-RIGHT: #666666 1px solid; PADDING-TOP: 3px
+}
+
+ul.myul2
+{
+list-style: url(images/blue-arrow-03.gif);
+margin: 0px;
+padding: 0px;
+}
+
+li.attachli
+{
+
+background-image: url(images/pdfnew1.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+line-height: 16px;
+padding-left: 40px;
+}
+
+ul.faq
+{
+list-style: square url("uploads/ngrey/sqorange.gif");
+padding: 10px;
+margin: 0px;
+}
+.title_bg
+{
+ height:25px;
+ width:630px;
+ text-align:left;
+ padding:0px;
+padding-left:5px;
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:13px;
+ font-weight:normal;
+ background: url("images/bg-title6.png") no-repeat;
+ color:#2e71b8;
+}
+
+table.wikitable {
+    margin: 1em 1em 1em 0;
+    background: #f9f9f9;
+    border: 1px #aaa solid;
+    border-collapse: collapse;
+}
+.wikitable th, .wikitable td {
+    border: 1px #aaa solid;
+    padding: 0.2em;
+}
+.wikitable th {
+    background: #f2f2f2;
+    text-align: center;
+}
+.wikitable caption {
+    font-weight: bold;
+}
+
+
+A.more1 {
+	BACKGROUND-IMAGE: url(images/org-arrow.gif); TEXT-ALIGN: left; WIDTH: 115px; DISPLAY: inline-block; 
+
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right 50%; COLOR: #e76308; FONT-SIZE: 11px; FONT-WEIGHT: 
+
+bold; TEXT-DECORATION: none
+}
+A.more1:hover {
+	BACKGROUND-IMAGE: url(images/blue-arrow-03.gif); TEXT-ALIGN: left; WIDTH: 115px; DISPLAY: inline-
+
+block; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right 50%; COLOR: #000000; FONT-SIZE: 11px; FONT-
+
+WEIGHT: bold; TEXT-DECORATION: none
+}
+
+.style5 {font-size: 9px}
+.style8 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; }
+.style12 {font-size: 10px; font-weight: bold; color: #FFFFFF; }
+.style13 {color: #FFFFFF}
+.style14 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; color: 
+
+#FFFFFF; }
+
+table.mod { width: 620px; padding: 0px; border: 0px solid #42afdc; background-color:#FF0000;font-family: 
+
+Verdana, Arial, Helvetica, sans-serif;}
+table.mod th { font-size: 11px; border: 0px solid #42afdc; background-color: #c1c1c1;font-weight: bold; 
+
+color:#000000;}
+table.mod td { font-size: 9px; border: 0px solid #42afdc; background-color: #ffffff; 
+vertical-align: middle; padding: 1px; font-weight: normal;}
+table.mod tr.special td { border-bottom: 1px solid #ff0000;  }
+
+
+table.mod1 { width: 630px; padding: 0px; border: 0px solid #42afdc; background-color:#FF0000;font-family: 
+
+Verdana, Arial, Helvetica, sans-serif;}
+table.mod1 th { font-size: 11px; border: 0px solid #42afdc; background-color: #FF0000;font-weight: bold; 
+
+color:#000000;}
+table.mod1 td { font-size: 9px; border: 0px solid #42afdc; background-color: #ffffff; 
+vertical-align: middle; padding: 1px; font-weight: normal;}
+table.mod1 tr.special td { border-bottom: 1px solid #ff0000;  }
+
+a#button12 {
+    display: block;
+    width: 177px;
+    height: 88px;
+    background-image: url(uploads/images/bid_x.png);
+    margin: 0 auto;
+}
+a#button12:hover {
+    background-image: url(uploads/images/bid_1.png);
+}
+a .alt { display: none; }
+
+
+#customers1
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:630px;
+border-collapse:collapse;
+}
+#customers1 td, #customers1 th 
+{
+font-size:0.7em;
+border:1px solid #66CC00;
+padding:3px 7px 2px 7px;
+}
+#customers1 th 
+{
+font-size:0.9em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#fff;
+}
+#customers1 tr.alt td 
+{
+font-size:0.7em;
+color:#000;
+background-color:#A7C942;
+}
+
+
+#customers
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+#customers td, #customers th 
+{
+font-size:11px;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;
+}
+#customers th 
+{
+font-size:11px;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#000;
+}
+#customers tr.alt td 
+{
+font-size:11px;
+color:#000;
+background-color:#EAF2D3;
+}
+
+/* End of 'Layout: Top menu + 2 columns' */
+
